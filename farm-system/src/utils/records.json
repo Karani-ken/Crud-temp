@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "image":"https://d25k40v8e40hv8.cloudfront.net/ueditor/php/upload/image/20211025/1635149133170811.jpeg",
+        "title":"Earnings",
+        "path":"/earnings"
+    
+        
+    },
+    {
+        "id": 2,
+        "image":"https://cdn.corporatefinanceinstitute.com/assets/types-of-assets-1024x575.jpeg",
+        "title":"Assets",
+        "path":"/assets"
+    },
+    {
+        "id": 3,
+        "image":"https://www.shutterstock.com/image-photo/text-expenditure-on-office-desk-260nw-1977285332.jpg",
+        "title":"Expenditures",
+        "path":"/expenditures"
+    }
+]

@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "image":"https://media.istockphoto.com/id/482295174/es/foto/ganado-ovino-y.jpg?s=612x612&w=is&k=20&c=GCMgQKzvbmqZBn4xdPDsBm6f1eNaim8FNnMEYXQaycM=",
+        "title":"Livestock"
+    },
+    {
+        "id": 2,
+        "image":"https://media.istockphoto.com/id/1130500593/es/foto/documentos-importantes-en-archivos-colocados-en-el-cabinete-de-archivo.jpg?s=612x612&w=is&k=20&c=nxPRKTKjHRetzxYtBdq2qy1FPyGcsYkqpGO9E3xP4ec=",
+        "title":"Records"
+    },
+    {
+        "id": 3,
+        "image":"https://media.istockphoto.com/id/1156740048/es/vector/dashboard-gran-dise%C3%B1o-para-cualquier-prop%C3%B3sito-del-sitio-plantilla-infogr%C3%A1fica-empresarial.jpg?s=612x612&w=is&k=20&c=DPGlAE33zEj39VrdaA9o5f5_HG3dDDNj10w2EUDZH1Q=",
+        "title":"Overview"
+    }
+]

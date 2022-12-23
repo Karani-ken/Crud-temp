@@ -1,0 +1,39 @@
+[
+
+    {
+        "id":1,
+        "image":"https://media.istockphoto.com/id/482295174/es/foto/ganado-ovino-y.jpg?s=612x612&w=is&k=20&c=GCMgQKzvbmqZBn4xdPDsBm6f1eNaim8FNnMEYXQaycM=",
+        "name":"cattle",
+        "age":"3yrs",
+        "parents":"cow1",
+        "siblings": 2,
+        "offsprings":3  
+    },
+    {
+        "id":2,
+        "image":"https://media.istockphoto.com/id/482295174/es/foto/ganado-ovino-y.jpg?s=612x612&w=is&k=20&c=GCMgQKzvbmqZBn4xdPDsBm6f1eNaim8FNnMEYXQaycM=",
+        "name":"sheep",
+        "age":"3yrs",
+        "parents":"cow1",
+        "siblings": 2,
+        "offsprings":3  
+    },
+    {
+        "id":3,
+        "image":"https://media.istockphoto.com/id/482295174/es/foto/ganado-ovino-y.jpg?s=612x612&w=is&k=20&c=GCMgQKzvbmqZBn4xdPDsBm6f1eNaim8FNnMEYXQaycM=",
+        "name":"goat",
+        "age":"3yrs",
+        "parents":"cow1",
+        "siblings": 2,
+        "offsprings":3  
+    },
+    {
+        "id":4,
+        "image":"https://media.istockphoto.com/id/482295174/es/foto/ganado-ovino-y.jpg?s=612x612&w=is&k=20&c=GCMgQKzvbmqZBn4xdPDsBm6f1eNaim8FNnMEYXQaycM=",
+        "name":"duck",
+        "age":"3yrs",
+        "parents":"cow1",
+        "siblings": 2,
+        "offsprings":3  
+    }
+]

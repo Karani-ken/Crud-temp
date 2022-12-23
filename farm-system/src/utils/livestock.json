@@ -1,0 +1,48 @@
+[
+    {
+        "id": 1,
+        "image":"https://upload.wikimedia.org/wikipedia/commons/0/0c/Cow_female_black_white.jpg",
+        "title":"Cattle"
+        
+    },
+    {
+        "id": 2,
+        "image":"https://i.natgeofe.com/k/0ed36c42-672a-425b-9e62-7cc946b98051/pig-fence_square.jpg",
+        "title":"Pigs"
+    },
+    {
+        "id": 3,
+        "image":"https://cdn.mos.cms.futurecdn.net/66BFcVtBTmooS64Wp6VAkb-1200-80.jpg",
+        "title":"Goat"
+    },
+    {
+        "id": 4,
+        "image":"https://media.4-paws.org/7/5/6/7/756746f95982a3d92017eed984b7adb4c5af5efb/VP0082009-1930x1336-1920x1329.jpg",
+        "title":"Sheep"
+
+    },
+    {
+        "id": 5,
+        "image":"https://cdn.standardmedia.co.ke/images/wysiwyg/images/zG1FoVYDpneVAFe0Uoj3xowtDCaFjU9E5tDN8V5o.jpg",
+        "title":"Chicken"
+
+    },
+    {
+        "id": 6,
+        "image":"https://cdnuploads.aa.com.tr/uploads/Contents/2019/11/28/thumbs_b_c_a8e37531312f5a6abcb0c60b26954111.jpg?v=102845",
+        "title":"Turkeys"
+
+    },
+    {
+        "id": 7,
+        "image":"https://media.4-paws.org/a/f/4/7/af47ae6aa55812faa4d7fd857a6e283a8c8226bc/VIER%20PFOTEN_2019-07-18_013-2890x2000-1920x1329.jpg",
+        "title":"Ducks"
+
+    },
+    {
+        "id": 8,
+        "image":"https://optimise2.assets-servd.host/steadfast-tern/production/what-is-a-group-of-geese-called.jpg?w=1200&h=900&q=80&fm=webp&fit=crop&crop=focalpoint&fp-x=0.5&fp-y=0.5&dm=1632420893&s=6b971fc8c184ff5f539dcb5c7f8a514b",
+        "title":"Geese"
+
+    }
+]
