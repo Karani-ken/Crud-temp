@@ -2,9 +2,9 @@
  const {User,validate}  = require('../models/user.models');
   const bcrypt = require("bcrypt");
 //add user
-router.post("/add", async(req,res)=>{
+router.post("/", async(req,res)=>{
    try{
-      const{error}= validate(req.body);
+      const {error} = validate(req.body);
       if(error) return res.status(400).send({message: error.details[0].message});
 
       const user = await User.findOne({email:req.body.email});
@@ -15,10 +15,10 @@ router.post("/add", async(req,res)=>{
        await new User({...req.body,password:hashPassword}).save();
        res.status(201).send({message:"User Created successfuly"})
    }catch(error){
-         res.status(500).send({message: "internal server"})
+         res.status(500).send({message: "internal server error"})
    }
 })
-
+        
 
 
  module.exports = router; 

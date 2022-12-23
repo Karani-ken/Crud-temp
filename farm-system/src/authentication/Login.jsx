@@ -4,8 +4,8 @@ import { Link,} from 'react-router-dom'
 import axios from 'axios'
 
 const SignUp = () => {
-  const url = 'http://localhost:5000/auth/'
-  const [Error, setError] = useState('')
+  
+ 
   const [data, setData] =useState({
     email:"",
     password:""
@@ -13,13 +13,14 @@ const SignUp = () => {
   const handleChange = ({currentTarget:input})=>{
     setData({...data,[input.name]:input.value})
   }
-  
+  const [Error, setError] = useState('')
   const handleSubmit= async(e)=>{
     e.preventDefault();
       try{
-        const {data: res} = await axios.post(url,data);
-        localStorage.setItem("token",res.data)
-        window.location = "/"
+        const url = 'http://localhost:8080/auth/';
+        const {data: res} = await axios.post(url, data);
+        localStorage.setItem("token", res.data);
+        window.location = "/";
       }catch(error){
         if(error.response && error.response.status >= 400 &&
           error.response.status <=500){
@@ -33,7 +34,7 @@ const SignUp = () => {
         <div className=" flex items-center justify-center bg-emerald-500 shadow-md shadow-gray-900 ">
         <form className='border-2 border-gray-100 h-[500px] w-[300px] text-center items-center justify-center rounded-3xl' onSubmit={handleSubmit}>
                 <span className='mt-6 '>
-                   {Error && <p className='text-xl bg-rose-400 rounded-lg'>{Error}</p>} 
+                   {Error && <p className='text-xl bg-rose-400 rounded-lg'>{Error}</p>}
                     <div className='m-12 flex items-start flex-col justify-start space-y-3'>
                         <input type='email' placeholder='Email' name='email' required value={data.email} className='rounded text-center' onChange={handleChange} />
                         <input type='password' placeholder='Password' name='password' required value={data.password} className='rounded text-center' onChange={handleChange} />

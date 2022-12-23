@@ -4,8 +4,8 @@ import { Link,useNavigate } from 'react-router-dom'
 import axios from 'axios'
 
 const SignUp = () => {
-  const url = 'http://localhost:5000/users/add'
-  const [Error, setError] = useState('')
+  
+ const [message, setMessage] = useState('')
   const [data, setData] =useState({
     firstName:"",
     lastName:"",
@@ -15,13 +15,16 @@ const SignUp = () => {
   const handleChange = ({currentTarget:input})=>{
     setData({...data,[input.name]:input.value})
   }
+  const [Error, setError] = useState('')
   const navigate = useNavigate();
   const handleSubmit= async(e)=>{
     e.preventDefault();
       try{
-        const {data: res} = await axios.post(url,data);
+        const url = 'http://localhost:8080/users/'
+        const {data: res} = await axios.post(url, data);
         navigate("/login")
-        console.log(res.Message)
+        console.log("profile Created")
+        setMessage("Account Created Successfully")
       }catch(error){
         if(error.response && error.response.status >= 400 &&
           error.response.status <=500){
@@ -37,6 +40,7 @@ const SignUp = () => {
                 <span className='mt-6 '>
                     <h1 className="text-black font-black">Create Account</h1>
                    {Error && <p className='text-xl bg-rose-400 rounded-lg'>{Error}</p>} 
+                   <p className='text-xl bg-Sky-600 rounded-lg'>{message}</p>
                     <div className='m-12 flex items-start flex-col justify-start space-y-3'>
                         <input type='text' placeholder='First Name' name='firstName' required value={data.firstName} className='rounded text-center' onChange={handleChange} />
                        
