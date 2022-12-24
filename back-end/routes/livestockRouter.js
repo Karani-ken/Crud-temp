@@ -5,7 +5,7 @@ const fs = require('fs')
 const multer = require('multer')
 let Livestock = require('../models/livestock.model')
 
-
+// multer storage
 const storage= multer.diskStorage({
     destination:(req, file,cb)=>{
         cb(null,'./uploads')
