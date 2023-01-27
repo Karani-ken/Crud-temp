@@ -1,5 +1,5 @@
 import axios from 'axios';
-import React ,{useState}from 'react'
+import React ,{useState,}from 'react'
 import { Link } from 'react-router-dom'
 const AddAsset = () => {
   const url =('http://localhost:5000/assets/add')
@@ -24,6 +24,9 @@ const AddAsset = () => {
       console.log(res.data);
       setMessage('Asset Added successfully');
     })
+    .catch(err =>{
+      console.log(err)
+    })
       
   }
   return (
@@ -35,7 +38,6 @@ const AddAsset = () => {
                 <p className='text-xl bg-rose-400 rounded-lg'>{Message}</p>
                 <div className='m-12 flex items-start flex-col justify-start space-y-3'>
                     <input type='text' placeholder='Name' className='rounded text-center' onChange={(e)=>{setAssetName(e.target.value)}} />
-                    <input type="file" className='rounded text-center cursor-pointer' />
                     <input type='text' placeholder='Category' className='rounded text-center' onChange={(e)=>{setAssetCategory(e.target.value)}} />
                     <input type='text' placeholder='Description' className='rounded text-center' onChange={(e)=>{setAssetDescription(e.target.value)}} />
                     <input type='text' placeholder='Cost' className='rounded text-center' onChange={(e)=>{setAssetCost(e.target.value)}}/>
