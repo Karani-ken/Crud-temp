@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import livestock_data from '../../utils/livestock.json'
 import axios from 'axios'
 const Records = () => {
+  /*
   const url='http://localhost:5000/livestock/read'
   const [Livestock,setLivestock]=useState([])
   useEffect(()=>{
@@ -10,6 +11,7 @@ const Records = () => {
       setLivestock(response.data);
     })
   })
+  */
   return (
     <div className='text-center p-10 md:h-screen w-full bg-emerald-200 '>
       <div className='text-center grid grid-cols-1 md:gap-10 md:grid-cols-2 items-start justify-start flex  md:flex md:justify-center md:items-center'>
@@ -25,7 +27,7 @@ const Records = () => {
               <p className='text-2xl my-5'>Click card to view Livestock Profile</p>
         <div className=' grid grid-col-1 md:grid-cols-4 gap-10 flex items-center justify-center '>            
             {
-                Livestock.map((items,key)=>{
+                livestock_data.map((items,key)=>{
                     return(
                       <Link to='/livestock'>
                       <div key={key} className='bg-emerald-900 rounded-lg text-center h-50 w-48 md:w-full h-full shadow-2xl shadow-gray-900 text-white hover:bg-emerald-500'>
