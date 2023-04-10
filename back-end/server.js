@@ -16,7 +16,7 @@ const authRouter = require('./routes/authRouter')
 const port = process.env.PORT 
 //database connection
     connectDb()
-    
+           
 //middlewears
 app.use(cors());
 app.use(express.json());

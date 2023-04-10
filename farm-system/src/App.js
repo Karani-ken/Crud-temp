@@ -21,13 +21,13 @@ import Navbar from './sub components/Dashboard/Navbar'
 
 
  function App() {
-    const user = localStorage.getItem("token")
+   
   return (
-    <Router>
+    <Router>      
           <div className='h-screen'>                
                 <Header/>
                 <Routes>
-                 { user &&  <Route path="/" exact element={<Dashboard/>}/> }
+                  <Route path="/" exact element={<Dashboard/>}/> 
                   <Route path="/earnings"  element={<Earnings/>}/>
                   <Route path="/assets"  element={<Assets/>}/>
                   <Route path="/expenditures"  element={<Expenditures/>}/>
